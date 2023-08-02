@@ -1,0 +1,69 @@
+body {
+    background-color: #f1f1f1;
+    font-family: 'Segoe UI',Helvetica,Arial,sans-serif;
+    font-size: 14px;
+}
+
+
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 200px;
+    left: 275px;
+    height: 350px;
+    width: 250px;
+
+}
+
+#viewDates {
+    width: 200px;
+    height: 70px;
+    font-size: 16px;
+    padding: 30px 20px;
+    border: none;
+    background-color: white;
+    color: black;
+}
+
+#addEvent {
+    width: 200px;
+    height: 70px;
+    font-size: 16px;
+    padding: 30px 20px;
+    border: none;
+    background-color: white;
+    color: black;
+}
+
+#viewContacts {
+    width: 200px;
+    height: 70px;
+    font-size: 16px;
+    padding: 30px 20px;
+    border: none;
+    background-color: white;
+    color: black;
+}
+
+h1 {
+    position: relative;
+    top: 100px;
+    left: 275px;
+    width: 250px
+}
+
+.form {
+    position: relative;
+    top: -365px;
+    left: 750px;
+    background-color: white;
+    height: 670px;
+    width: 350px;
+}
+
+#inputSchedule {
+    height: 600px;
+    width: 350px;
+}
