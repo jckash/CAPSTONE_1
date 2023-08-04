@@ -4,8 +4,16 @@
 			"path": "."
 		},
 		{
-			"path": "../../Downloads/html-css-2-solution 4"
+			"path": "../../Downloads/js-interactivity-demo 2"
+		},
+		{
+			"path": "../BP9Assessments/assessment-qa-devops"
+		},
+		{
+			"path": "../../Downloads/back-end-2-demo"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "CAPSTONE"
+	}
 }
