@@ -4,7 +4,7 @@ let eventForm = document.getElementById('eventForm')
 let inputEvent = document.getElementById('inputEvent')
 let inputTime = document.getElementById('inputTime')
 let inputSchedule = document.getElementById('inputSchedule')
-let viewDates = document.getElementById('viewDates')
+let viewEvents = document.getElementById('viewEvents')
 
 eventForm.addEventListener('submit', (event) =>{
 event.preventDefault()
@@ -16,17 +16,29 @@ let body = {
 
 axios.post('http://localhost:4050/api/events', body)
 .then((response) => {
-console.log(response.data)
+console.log(response.data);
+eventForm.reset();
 
 }).catch((error) => {
     console.log(error)
 })
 })
 
-viewDates.addEventListener('click', () => {
-    axios.get('http://localhost:4050/api/events')
+viewEvents.addEventListener('click', () => {
+    
+    axios.get('http://localhost:4050/api/dates')
     .then(response => {
         console.log(response.data)
          
          })
+});
+
+addEvent.addEventListener('click', () => {
+    axios.post('http://localhost:4050/api/events')
+    .then(response => {
+        console.log(response.data)
+         
+         })
+
+    
 });
