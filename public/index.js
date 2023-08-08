@@ -33,6 +33,8 @@ viewEvents.addEventListener('click', () => {
          })
 });
 
+
+
 addEvent.addEventListener('click', () => {
     axios.post('http://localhost:4050/api/events')
     .then(response => {
@@ -42,3 +44,17 @@ addEvent.addEventListener('click', () => {
 
     
 });
+
+const event = document.getElementById('event').value;
+const time = document.getElementById('time').value;
+const schedule = document.getElementById('schedule').value;
+
+const card = document.createElement('div');
+card.className = "card";
+card.innerHTML = `
+<h2>${event}</h2>
+<h2>${time}<h2>
+<p>Schedule: ${schedule} </p>`;
+
+const eventsContainer = document.getElementById('eventsContainer');
+eventsContainer.appendChild(card);

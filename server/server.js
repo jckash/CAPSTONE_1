@@ -8,16 +8,11 @@ app.use(cors())
 app.use(express.static('public'))
 let events = []
 
+const {getEvent, createEvent} = require('./controller.js')
 
-app.post('/api/events', (req, res) => {
 
-let body = req.body
-events.push(body)
-console.log(events)
-    res.status(200).send('success')
-} )
+app.post('/api/events', createEvent)
 
-const {getEvent} = require('./controller.js')
 
 app.get('/api/dates', getEvent)
 
