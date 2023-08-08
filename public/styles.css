@@ -25,6 +25,7 @@ body {
     border: none;
     background-color: white;
     color: black;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 #addEvent {
@@ -35,6 +36,7 @@ body {
     border: none;
     background-color: white;
     color: black;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 #viewContacts {
@@ -45,13 +47,15 @@ body {
     border: none;
     background-color: white;
     color: black;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
     position: relative;
     top: 100px;
     left: 275px;
-    width: 250px
+    width: 250px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 #eventForm {
@@ -59,16 +63,34 @@ h1 {
     top: -365px;
     left: 750px;
     background-color: white;
-    height: 670px;
-    width: 350px;
+    height: 690px;
+    width: 400px;
 }
 
 #inputSchedule {
     height: 600px;
     width: 350px;
+    border: none;
 }
 
+#inputEvent {
+    height: 60px;
+    width: 350px;
+    border: none;
+
+}
+#inputTime {
+    position: relative;
+    left: 400;
+}
+
+#submit {
+    position: relative;
+    left: 175px;
+}
 #eventsContainer {
+    display: flex;
+    flex-direction: column;
     position: relative;
     left: 650px;
     top: -400px;
@@ -77,5 +99,7 @@ h1 {
     margin: 10px;
     background-color: #f9f9f9;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    width: fit-content;
+    box-sizing: content-box;
 }
 

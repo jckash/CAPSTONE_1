@@ -16,7 +16,7 @@ app.post('/api/events', createEvent)
 
 app.get('/api/dates', getEvent)
 
-app.delete('/api/dates', deleteEvent)
+app.delete('/api/dates/:id', deleteEvent)
 
 app.get('/events', (req, res) => {
     res.sendFile(path.join(__dirname, '../public/events.html'))

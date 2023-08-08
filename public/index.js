@@ -45,10 +45,7 @@ addEvent.addEventListener('click', () => {
     
 });
 
-axios.delete('http://localhost:4050/api/dates')
-.then(response => { 
-    console.log('Event deleted! Hope you had fun.', response.data)
-})
+
 
 
 

@@ -29,13 +29,13 @@
        
         <input type="text" id="inputEvent" name="inputEvent" placeholder="Add new Event . . ."required><br>
 
-        <label for="inputTime">Add Time</label>
+        <label for="inputTime"></label>
         <input type="datetime-local" id="inputTime" name="inputTime" required><br>
 
 
-        <input type="text" id="inputSchedule" name="inputSchedule" rows="20" cols="80" placeholder="What's first on the schedule?. . ."required><br>
+        <textarea type="text" id="inputSchedule" name="inputSchedule" rows="20" cols="80" placeholder="What's first on the schedule?. . ."   required></textarea>
 
-        <button type="submit">Save the Date</button> 
+        <button id="submit" type="submit">Save the Date</button> 
     </form>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="index.js"></script>

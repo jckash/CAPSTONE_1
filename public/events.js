@@ -29,7 +29,14 @@ addEvent.addEventListener('click', () => {
     
 });
 
-
+function deleteEvent(id) {
+axios.delete(`http://localhost:4050/api/dates/${id}`)
+.then(response => { 
+    console.log('Event deleted! Hope you had fun.', response.data)
+    let cardToRemove = document.getElementById(`card-${id}`)
+    cardToRemove.remove()
+})
+}
 
 
 const eventsContainer = document.getElementById('eventsContainer');
@@ -40,13 +47,14 @@ const eventsCallback = ({ data: events }) => displayEvents(events)
 
 function createEventCard(event){
 const card = document.createElement('div');
+card.setAttribute('id',`card-${event.id}`)
 card.className = "card";
 card.innerHTML = `
 <h2>${event.event}</h2>
-<h2>${event.time}<h2>
+<h3>${event.time}<h3>
 <p>Schedule: ${event.schedule} </p>
 </div>
-<button onclick="deleteEvent(${event.id})">delete</button>`;
+<button onclick="deleteEvent(${event.id})">Remove Event</button>`;
 
 
 eventsContainer.appendChild(card);

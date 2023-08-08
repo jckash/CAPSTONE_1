@@ -7,6 +7,7 @@ module.exports = {
     deleteEvent: (req, res) => {
         let index = events.findIndex(elem => elem.id === +req.params.id)
         events.splice(index, 1)
+        console.log(events)
         res.status(200).send(events)
     },
     createEvent: (req, res) => {
