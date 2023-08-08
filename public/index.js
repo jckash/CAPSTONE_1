@@ -45,16 +45,10 @@ addEvent.addEventListener('click', () => {
     
 });
 
-const event = document.getElementById('event').value;
-const time = document.getElementById('time').value;
-const schedule = document.getElementById('schedule').value;
+axios.delete('http://localhost:4050/api/dates')
+.then(response => { 
+    console.log('Event deleted! Hope you had fun.', response.data)
+})
 
-const card = document.createElement('div');
-card.className = "card";
-card.innerHTML = `
-<h2>${event}</h2>
-<h2>${time}<h2>
-<p>Schedule: ${schedule} </p>`;
 
-const eventsContainer = document.getElementById('eventsContainer');
-eventsContainer.appendChild(card);
+
