@@ -34,5 +34,5 @@ This application is yet to be deployed. Follow these instructions to run the app
 9. Open a tab in your browser and type in 'localhost:4050'.
 10. Explore the app.
 
-<a href="https://youtu.be/6Y3IJ5mdj30" width="240" height="180" border="10" /></a>
+
 
