@@ -1,4 +1,4 @@
-#**Save the Date**
+# H1 **Save the Date**
 
 
 Learn more about Jennifer: https://www.linkedin.com/in/jennifer-kash-96247b174/
@@ -11,7 +11,7 @@ and that can be used practically to assisst in her day to day. Coming from a pas
 ![alt text](ReadMe screenshot 1.png)
 ![alt text](Read Me screenshot 2.png)
 
-#Technologies Used
+# H1 Technologies Used
 - Javascript
 - Node.js
 - Express
@@ -19,7 +19,7 @@ and that can be used practically to assisst in her day to day. Coming from a pas
 - HTML
 - CSS
 
-#How to Locally Run Save the Date
+# H1 How to Locally Run Save the Date
 
 This application is yet to be deployed. Follow these instructions to run the app locally. 
 
