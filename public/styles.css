@@ -81,12 +81,15 @@ h1 {
 }
 #inputTime {
     position: relative;
-    left: 400;
+    left: 100px;
+    top: 595px;
 }
 
 #submit {
     position: relative;
-    left: 175px;
+    left: 170px;
+    background-color: #f9f9f9;
+
 }
 #eventsContainer {
     display: flex;
