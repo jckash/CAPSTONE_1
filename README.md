@@ -8,8 +8,8 @@ Save the Date is a web application built by Jennifer Kash. Faced with her first 
 full stack project, she is excited to create something inspired by her every day life 
 and that can be used practically to assisst in her day to day. Coming from a past of event planning, her application can be used to create a bank of important events, date and time, and schedules and reminders for these events. Her focus for this project was a sleek and intuitive design with full functionality. 
 
-![alt text](ReadMe screenshot 1.png)
-![alt text](Read Me screenshot 2.png)
+![alt text](https://github.com/jckash/CAPSTONE_1/blob/main/ReadMe%20screenshot%201.png)
+![alt text](https://github.com/jckash/CAPSTONE_1/blob/main/Read%20Me%20screenshot%202.png)
 
 # Technologies Used
 - Javascript
